@@ -1,3 +1,4 @@
+import {AnimatePresence, motion} from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import {Dispatch, SetStateAction} from 'react';
@@ -13,7 +14,12 @@ export default function VTuber({
 }): JSX.Element {
     return (
         <>
-            <div className='flex flex-col items-center space-y-sm'>
+            <motion.div
+                key={selectedIdx}
+                animate={{opacity: 1}}
+                initial={{opacity: 0}}
+                className='flex flex-col items-center space-y-sm'
+            >
                 <div className='w-[284px] h-[284px] relative'>
                     <Image src='/accents/ripple-full.svg' layout='fill' />
                     <div className='w-[244px] h-[244px] absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
@@ -38,7 +44,8 @@ export default function VTuber({
                         </a>
                     </Link>
                 </div>
-            </div>
+            </motion.div>
+
             <div className='flex flex-col w-1/2 space-y-base self-center'>
                 <div className='space-y-sm'>
                     <h4>Description</h4>

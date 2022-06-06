@@ -37,6 +37,10 @@ h4 {
     @apply text-xl text-secondary font-semibold;
 }
 
+.ghost {
+    @apply text-9xl text-secondary font-bold opacity-10 absolute top-0 left-0;
+}
+
 p {
     font-family: Inter;
 }

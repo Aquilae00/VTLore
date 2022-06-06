@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Examples from '../content/examples';
 import HeroSection from '../content/hero';
+import Playground from '../content/playground';
 
 const Home: NextPage = () => {
     return (
@@ -12,9 +13,10 @@ const Home: NextPage = () => {
             </div>
             <main className='w-10/12'>
                 <HeroSection />
-                <div className='mt-[200px]'>
+                <div>
                     <Examples />
                 </div>
+                <Playground />
             </main>
         </div>
     );

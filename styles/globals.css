@@ -29,6 +29,14 @@ h2 {
     @apply text-5xl font-bold text-primary;
 }
 
+h3 {
+    @apply text-3xl text-secondary font-semibold;
+}
+
+h4 {
+    @apply text-xl text-secondary font-semibold;
+}
+
 p {
     font-family: Inter;
 }

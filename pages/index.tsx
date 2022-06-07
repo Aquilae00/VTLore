@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <>
             <NextSeo
                 title='VTLore'
-                description="Ever wondered how Skynet would write your character's lore? This shouldn't exist, but it now does."
+                description="Ever wondered how Skynet would write your character's lore? This shouldn't exist, but now it does."
                 openGraph={{
                     type: 'website',
                     description:

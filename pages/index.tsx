@@ -19,7 +19,7 @@ const Home: NextPage = () => {
                     type: 'website',
                     description:
                         "Ever wondered how Skynet would write your character's lore? This shouldn't exist, but it now does.",
-                    url: 'https://animi.fun',
+                    url: 'https://vtlore.vercel.app/',
                     site_name: 'VTLore',
                 }}
             />

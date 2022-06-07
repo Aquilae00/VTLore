@@ -28,7 +28,7 @@ export default function Playground(): JSX.Element {
                             <Typewriter
                                 key={lore}
                                 onInit={(typewriter) => {
-                                    typewriter.start();
+                                    typewriter.callFunction(() => console.log('reee'));
                                 }}
                                 options={{
                                     delay: 10,

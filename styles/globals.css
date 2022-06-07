@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: NotoSansJP, Inter, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -35,6 +36,10 @@ h3 {
 
 h4 {
     @apply text-xl text-secondary font-semibold;
+}
+
+textarea {
+    resize: none;
 }
 
 .ghost {

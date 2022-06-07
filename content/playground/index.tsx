@@ -1,11 +1,48 @@
+import Image from 'next/image';
+import {useState} from 'react';
+import {FaCog} from 'react-icons/fa';
+import ButtonPrimary from '../../components/buttons/primary';
+import Forms from './components/forms';
+import Typewriter from 'typewriter-effect';
+
 export default function Playground(): JSX.Element {
+    const [formProps, setFormProps] = useState({name: '', description: ''});
+    const [lore, setLore] = useState('');
     return (
-        <div className=' h-screen' id='examples'>
-            <div className='flex self-start relative'>
-                ]<span className='ghost'>Playground</span>
-                <h2 className='mb-md'>Playground</h2>
+        <div className='flex items-center justify-center relative w-full overflow-x-hidden'>
+            <div className='w-10/12'>
+                <div className='h-screen' id='playground'>
+                    <div className='flex self-start relative'>
+                        <span className='ghost'>Playground</span>
+                        <h2 className='mb-md'>Playground</h2>
+                    </div>
+                    <div className='flex justify-center items-center space-x-xl'>
+                        <Forms formProps={formProps} setFormProps={setFormProps} />
+                        <div>
+                            <ButtonPrimary onClick={() => setLore(formProps.description)}>
+                                <span>Generate</span>
+                                <FaCog />
+                            </ButtonPrimary>
+                        </div>
+                        <div className='flex w-1/2 self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[500px] shadow-lg relative'>
+                            <Typewriter
+                                key={lore}
+                                onInit={(typewriter) => {
+                                    typewriter.start();
+                                }}
+                                options={{
+                                    delay: 10,
+                                    autoStart: true,
+                                    strings: lore,
+                                }}
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className='flex justify-between w-5/6'></div>
+            <div className='absolute -right-[200px] top-0 opacity-70'>
+                <Image src='/accents/book.svg' width={600} height={600} />
+            </div>
         </div>
     );
 }

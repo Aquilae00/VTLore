@@ -5,6 +5,7 @@ import {useEffect, useState} from 'react';
 import Image from 'next/image';
 import {motion} from 'framer-motion';
 
+
 export default function HeroSection(): JSX.Element {
     const showcase = [
         'Xiulan Long was born to a family of dragons who resided in the clouds, high above the rest of the world. Though gentle and peaceful by nature, her family was constantly at war with another clan of dragons. One day, in the midst of battle, Xiulan was knocked from the sky and fell into a deep sleep. When she awoke, she found herself in a strange land far from home. Not knowing how to get back, she decided to explore this new world and find her way home.',
@@ -22,12 +23,11 @@ export default function HeroSection(): JSX.Element {
         };
     }, []);
     return (
-        <>
+        <div className='w-10/12'>
             <motion.div
                 animate={{
                     y: yAxis,
                 }}
- 
                 className='flex h-screen items-center relative'
             >
                 <div className='flex items-center w-full'>
@@ -43,7 +43,7 @@ export default function HeroSection(): JSX.Element {
                             young man.
                         </p>
                         <div>
-                            <ButtonPrimary>
+                            <ButtonPrimary href='#playground'>
                                 <span>Try it now</span>
                                 <FaArrowDown className='text-base' />
                             </ButtonPrimary>
@@ -74,6 +74,6 @@ export default function HeroSection(): JSX.Element {
                     <div className='absolute h-[300px] w-[1px] bg-secondary left-1/2 -translate-x-1/2 mt-md'></div>
                 </div>
             </motion.div>
-        </>
+        </div>
     );
 }

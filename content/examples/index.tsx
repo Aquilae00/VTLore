@@ -16,7 +16,7 @@ export default function Examples(): JSX.Element {
                         <span className='ghost'>Examples</span>
                         <h2 className='mb-md'>Examples</h2>
                     </div>
-                    <div className='flex flex-col space-y-base lg:flex-row lg:space-x-2xl lg:justify-center'>
+                    <div className='flex flex-col space-y-base lg:flex-row lg:space-x-2xl lg:justify-center lg:w-5/6'>
                         <Profiles selectedIdx={selectedIdx} setSelectedIdx={setSelectedIdx} />
                         <VTuber selectedIdx={selectedIdx} setSelectedIdx={setSelectedIdx} />
                     </div>

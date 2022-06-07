@@ -13,7 +13,7 @@ export default function VTuber({
     setSelectedIdx: Dispatch<SetStateAction<number>>;
 }): JSX.Element {
     return (
-        <div className='flex flex-col lg:flex-row lg:space-x-2xl'>
+        <div className='flex flex-col lg:flex-row lg:space-x-2xl space-y-base lg:space-y-0'>
             <motion.div
                 key={selectedIdx}
                 animate={{opacity: 1}}
@@ -46,7 +46,7 @@ export default function VTuber({
                 </div>
             </motion.div>
 
-            <div className='flex flex-col lg:w-1/2 space-y-base self-center'>
+            <div className='flex flex-col space-y-base self-center'>
                 <div className='space-y-sm'>
                     <h4>Description</h4>
                     <p>{profilesMap[selectedIdx].description}</p>

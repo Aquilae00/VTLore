@@ -22,7 +22,7 @@ export default function Forms({
         'border-2 font-medium rounded focus:border-blue-500 outline-none bg-gray-50 w-full p-xs text-gray-600 placeholder:text-gray-lighter';
 
     return (
-        <form className='flex flex-col w-1/2 space-y-base'>
+        <form className='flex flex-col w-full lg:w-1/2 space-y-base'>
             <fieldset className='flex flex-col space-y-sm'>
                 <Label>Character name</Label>
                 <input

@@ -15,7 +15,7 @@ export default function Playground(): JSX.Element {
                     <span className='ghost'>Playground</span>
                     <h2 className='mb-md'>Playground</h2>
                 </div>
-                <div className='flex justify-center items-center space-x-xl'>
+                <div className='flex flex-col lg:flex-row justify-center items-center lg:space-x-xl space-y-lg'>
                     <Forms formProps={formProps} setFormProps={setFormProps} />
                     <div>
                         <ButtonPrimary onClick={() => setLore(formProps.description)}>
@@ -23,7 +23,7 @@ export default function Playground(): JSX.Element {
                             <FaCog />
                         </ButtonPrimary>
                     </div>
-                    <div className='flex w-1/2 self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[500px] shadow-lg relative'>
+                    <div className='flex w-full lg:w-1/2 self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[500px] shadow-lg relative'>
                         <Typewriter
                             key={lore}
                             onInit={(typewriter) => {

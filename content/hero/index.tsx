@@ -20,7 +20,7 @@ export default function HeroSection(): JSX.Element {
         };
     }, []);
     return (
-        <div className='w-10/12'>
+        <div className='w-10/12 '>
             <motion.div
                 animate={{
                     y: yAxis,

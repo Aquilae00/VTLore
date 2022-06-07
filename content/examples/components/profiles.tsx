@@ -12,7 +12,7 @@ export default function Profiles({
     setSelectedIdx: Dispatch<SetStateAction<number>>;
 }): JSX.Element {
     return (
-        <div className='flex lg:flex-col lg:space-y-md justify-between lg:justify-center'>
+        <div className='flex lg:flex-col gap-base lg:justify-center'>
             {profilesMap.map((e, i) => (
                 <motion.button
                     initial={{y: -100 * (i + 1)}}

@@ -24,6 +24,9 @@ module.exports = {
                 '20%': '20%',
                 '50%': '50%',
             },
+            maxWidth: {
+                widest: '1600px',
+            },
         },
     },
     mode: 'jit',

@@ -14,10 +14,10 @@ export default function Profiles({
     return (
         <div className='flex lg:flex-col gap-base lg:justify-center'>
             {profilesMap.map((e, i) => (
-                <motion.button
-                    initial={{y: -100 * (i + 1)}}
-                    whileInView={{y: 0, transition: {duration: 0.5}}}
-                    viewport={{once: true}}
+                <button
+                    // initial={{y: -100 * (i + 1)}}
+                    // whileInView={{y: 0, transition: {duration: 0.5}}}
+                    // viewport={{once: true}}
                     type='button'
                     onClick={() => {
                         setSelectedIdx(i);
@@ -36,7 +36,7 @@ export default function Profiles({
                         objectFit='cover'
                         className='rounded-full'
                     />
-                </motion.button>
+                </button>
             ))}
         </div>
     );

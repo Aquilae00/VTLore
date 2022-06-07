@@ -24,17 +24,19 @@ export default function Playground(): JSX.Element {
                         </ButtonPrimary>
                     </div>
                     <div className='flex w-full lg:w-1/2 self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[500px] shadow-lg relative'>
-                        <Typewriter
-                            key={lore}
-                            onInit={(typewriter) => {
-                                typewriter.callFunction(() => console.log('reee'));
-                            }}
-                            options={{
-                                delay: 10,
-                                autoStart: true,
-                                strings: lore,
-                            }}
-                        />
+                        <p className='opacity-60 '>
+                            <Typewriter
+                                key={lore}
+                                onInit={(typewriter) => {
+                                    typewriter.callFunction(() => console.log('reee'));
+                                }}
+                                options={{
+                                    delay: 10,
+                                    autoStart: true,
+                                    strings: lore,
+                                }}
+                            />
+                        </p>
                     </div>
                 </div>
             </div>

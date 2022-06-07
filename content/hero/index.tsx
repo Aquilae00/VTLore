@@ -27,7 +27,7 @@ export default function HeroSection(): JSX.Element {
                 }}
                 className='flex min-h-screen items-center relative'
             >
-                <div className='flex flex-col space-y-2xl lg:flex-row justify-center items-center w-full mt-[200px] lg:mt-0 lg:space-y-0'>
+                <div className='flex flex-col gap-2xl lg:flex-row justify-center items-center w-full mt-[200px] lg:mt-0 lg:space-y-0'>
                     <div className='flex flex-col items-center lg:items-start space-y-md lg:w-1/2'>
                         <h1>
                             The <span className='font-bold text-primary'>AI</span> lore generator
@@ -46,11 +46,11 @@ export default function HeroSection(): JSX.Element {
                             </ButtonPrimary>
                         </div>
                     </div>
-                    <div className='flex lg:w-1/2 w-full lg:self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[300px] shadow-lg relative'>
+                    <div className='flex lg:w-1/2 w-full lg:self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[440px] md:min-h-[340px] lg:min-h-[300px] shadow-lg relative mt-lg'>
                         <div className='absolute right-2xl lg:-left-[130px] -top-[130px]'>
                             <Image src='/accents/hero-arrow.svg' height={200} width={200} />
                         </div>
-                        <p className='opacity-60 text-xl'>
+                        <p className='opacity-60 md:text-lg lg:text-xl'>
                             <Typewriter
                                 onInit={(typewriter) => {
                                     typewriter.pauseFor(2500).start();

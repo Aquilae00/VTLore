@@ -35,12 +35,12 @@ export default function VTuber({
                 <div className='flex items-center justify-center space-x-base'>
                     <Link href={profilesMap[selectedIdx].socials.twitch}>
                         <a target='_blank' referrerPolicy='no-referrer' rel='noreferrer'>
-                            <FaTwitch className='text-3xl text-purple-500' />
+                            <FaTwitch className='text-2xl text-purple-500' />
                         </a>
                     </Link>
                     <Link href={profilesMap[selectedIdx].socials.twitter}>
                         <a target='_blank' referrerPolicy='no-referrer' rel='noreferrer'>
-                            <FaTwitter className='text-3xl text-blue-500' />
+                            <FaTwitter className='text-2xl text-blue-500' />
                         </a>
                     </Link>
                 </div>

@@ -18,7 +18,7 @@ const Home: NextPage = () => {
                 openGraph={{
                     type: 'website',
                     description:
-                        "Ever wondered how Skynet would write your character's lore? This shouldn't exist, but it now does.",
+                        "Ever wondered how Skynet would write your character's lore? This shouldn't exist, but now it does.",
                     url: 'https://vtlore.vercel.app/',
                     site_name: 'VTLore',
                 }}

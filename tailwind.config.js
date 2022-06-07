@@ -25,7 +25,7 @@ module.exports = {
                 '50%': '50%',
             },
             maxWidth: {
-                widest: '1600px',
+                widest: '1700px',
             },
         },
     },

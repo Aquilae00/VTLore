@@ -53,7 +53,7 @@ export default function HeroSection(): JSX.Element {
                         <p className='opacity-60 md:text-lg lg:text-xl'>
                             <Typewriter
                                 onInit={(typewriter) => {
-                                    typewriter.pauseFor(2500).start();
+                                    typewriter.pauseFor(4000).start();
                                 }}
                                 options={{
                                     delay: 10,

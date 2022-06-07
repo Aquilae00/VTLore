@@ -28,6 +28,7 @@ export default function Forms({
                 <input
                     className={formInputStyle}
                     value={formProps.name}
+                    placeholder='your character name'
                     onChange={(e) => setFormProps((prev) => ({...prev, name: e.target.value}))}
                 ></input>
             </fieldset>
@@ -36,6 +37,7 @@ export default function Forms({
                 <textarea
                     className={`${formInputStyle} h-[200px]`}
                     value={formProps.description}
+                    placeholder='describe your character... more details will produce "better" result.'
                     onChange={(e) =>
                         setFormProps((prev) => ({...prev, description: e.target.value}))
                     }

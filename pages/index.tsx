@@ -14,7 +14,7 @@ const Home: NextPage = () => {
                 <Image src='/accents/ripple.svg' width={500} height={500} />
             </div>
             <div className='fixed w-10/12 top-md z-50'>
-                <div>
+                <div className='flex'>
                     <Link href='/' scroll>
                         <a>
                             <motion.div whileTap={{rotateX: 360, transition: {duration: 0.1}}}>

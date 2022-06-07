@@ -4,13 +4,10 @@ import Typewriter from 'typewriter-effect';
 import {useEffect, useState} from 'react';
 import Image from 'next/image';
 import {motion} from 'framer-motion';
-
+import {profilesMap} from '../examples/profilesMap';
 
 export default function HeroSection(): JSX.Element {
-    const showcase = [
-        'Xiulan Long was born to a family of dragons who resided in the clouds, high above the rest of the world. Though gentle and peaceful by nature, her family was constantly at war with another clan of dragons. One day, in the midst of battle, Xiulan was knocked from the sky and fell into a deep sleep. When she awoke, she found herself in a strange land far from home. Not knowing how to get back, she decided to explore this new world and find her way home.',
-        'hello world',
-    ];
+    const showcase = profilesMap.map((e) => e.lore);
 
     const [yAxis, setYAxis] = useState(0);
     useEffect(() => {

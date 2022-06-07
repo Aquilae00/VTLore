@@ -7,7 +7,7 @@ const nextConfig = {
     async rewrites() {
         return [{
             source: '/generator',
-            destination: 'http://localhost:4000/generator',
+            destination: 'https://vtlore.herokuapp.com/generator',
         }, ];
     },
 };

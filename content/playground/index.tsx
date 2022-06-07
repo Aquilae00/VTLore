@@ -73,8 +73,12 @@ export default function Playground(): JSX.Element {
                         <ButtonPrimary onClick={handleGenerate} disabled={isTyping || isLoading}>
                             <span>Generate</span>
                             <motion.div
-                                animate={isLoading ? {rotate: 180} : {rotate: 0}}
-                                transition={isLoading ? {repeat: Infinity, duration: 1} : undefined}
+                                animate={isLoading || isTyping ? {rotate: 180} : {rotate: 0}}
+                                transition={
+                                    isLoading || isTyping
+                                        ? {repeat: Infinity, duration: 1}
+                                        : undefined
+                                }
                             >
                                 <FaCog />
                             </motion.div>
@@ -102,7 +106,9 @@ export default function Playground(): JSX.Element {
                                 Playground will be disabled soon. To immortalize your lore, share it
                                 on Twitter!
                             </span>
-                            <Link href={`https://twitter.com/intent/tweet?text=${lore}&hashtags=vtlore`}>
+                            <Link
+                                href={`https://twitter.com/intent/tweet?text=${lore}&hashtags=vtlore`}
+                            >
                                 <a
                                     target='_blank'
                                     className='rounded-full bg-blue-500 flex space-x-sm items-center justify-center px-base py-xs text-white'

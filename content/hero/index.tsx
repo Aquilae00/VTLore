@@ -27,8 +27,8 @@ export default function HeroSection(): JSX.Element {
                 }}
                 className='flex h-screen items-center relative'
             >
-                <div className='flex items-center w-full'>
-                    <div className='flex flex-col space-y-md w-1/2'>
+                <div className='flex flex-col space-y-lg lg:flex-row justify-center items-center w-full mt-[200px] lg:mt-0 lg:space-y-0'>
+                    <div className='flex flex-col space-y-md lg:w-1/2'>
                         <h1>
                             The <span className='font-bold text-primary'>AI</span> lore generator
                             for
@@ -46,8 +46,8 @@ export default function HeroSection(): JSX.Element {
                             </ButtonPrimary>
                         </div>
                     </div>
-                    <div className='flex w-1/2 self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[300px] shadow-lg relative'>
-                        <div className='absolute -left-[130px] -top-[130px]'>
+                    <div className='flex lg:w-1/2 w-full lg:self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[300px] shadow-lg relative'>
+                        <div className='absolute right-2xl lg:-left-[130px] -top-[130px]'>
                             <Image src='/accents/hero-arrow.svg' height={200} width={200} />
                         </div>
                         <p className='opacity-60 text-xl'>
@@ -66,7 +66,7 @@ export default function HeroSection(): JSX.Element {
                         </p>
                     </div>
                 </div>
-                <div className='absolute bottom-[120px] left-[300px] -transform-x-1/2'>
+                <div className='hidden lg:absolute bottom-[120px] left-[300px] -transform-x-1/2'>
                     <span className='tracking-widest text-secondary'>SCROLL</span>
                     <div className='absolute h-[300px] w-[1px] bg-secondary left-1/2 -translate-x-1/2 mt-md'></div>
                 </div>

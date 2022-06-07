@@ -13,16 +13,16 @@ export default function VTuber({
     setSelectedIdx: Dispatch<SetStateAction<number>>;
 }): JSX.Element {
     return (
-        <>
+        <div className='flex flex-col lg:flex-row lg:space-x-2xl'>
             <motion.div
                 key={selectedIdx}
                 animate={{opacity: 1}}
                 initial={{opacity: 0}}
                 className='flex flex-col items-center space-y-sm'
             >
-                <div className='w-[284px] h-[284px] relative'>
+                <div className='w-[164px] h-[164px] lg:w-[284px] lg:h-[284px] relative'>
                     <Image src='/accents/ripple-full.svg' layout='fill' />
-                    <div className='w-[244px] h-[244px] absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                    <div className='w-[128px] h-[128px] lg:w-[244px] lg:h-[244px] absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                         <Image
                             src={profilesMap[selectedIdx].avatar}
                             layout='fill'
@@ -46,7 +46,7 @@ export default function VTuber({
                 </div>
             </motion.div>
 
-            <div className='flex flex-col w-1/2 space-y-base self-center'>
+            <div className='flex flex-col lg:w-1/2 space-y-base self-center'>
                 <div className='space-y-sm'>
                     <h4>Description</h4>
                     <p>{profilesMap[selectedIdx].description}</p>
@@ -59,6 +59,6 @@ export default function VTuber({
                     *This lore is 100% AI generated and is not their actual lore.
                 </span>
             </div>
-        </>
+        </div>
     );
 }

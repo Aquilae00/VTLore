@@ -25,17 +25,17 @@ export default function HeroSection(): JSX.Element {
                 animate={{
                     y: yAxis,
                 }}
-                className='flex h-screen items-center relative'
+                className='flex min-h-screen items-center relative'
             >
-                <div className='flex flex-col space-y-lg lg:flex-row justify-center items-center w-full mt-[200px] lg:mt-0 lg:space-y-0'>
-                    <div className='flex flex-col space-y-md lg:w-1/2'>
+                <div className='flex flex-col space-y-2xl lg:flex-row justify-center items-center w-full mt-[200px] lg:mt-0 lg:space-y-0'>
+                    <div className='flex flex-col items-center lg:items-start space-y-md lg:w-1/2'>
                         <h1>
                             The <span className='font-bold text-primary'>AI</span> lore generator
                             for
                             {` `}
                             <span className='font-bold text-primary'>VTubers</span>
                         </h1>
-                        <p className='w-3/4'>
+                        <p className='w-3/4 text-center lg:text-left'>
                             Get your own lore written by our supreme AI overlord. The future is now,
                             young man.
                         </p>
@@ -66,7 +66,7 @@ export default function HeroSection(): JSX.Element {
                         </p>
                     </div>
                 </div>
-                <div className='hidden lg:absolute bottom-[120px] left-[300px] -transform-x-1/2'>
+                <div className='hidden lg:block absolute bottom-[120px] left-[300px] -transform-x-1/2'>
                     <span className='tracking-widest text-secondary'>SCROLL</span>
                     <div className='absolute h-[300px] w-[1px] bg-secondary left-1/2 -translate-x-1/2 mt-md'></div>
                 </div>

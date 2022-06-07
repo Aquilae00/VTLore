@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    @apply text-6xl font-bold;
+    @apply text-center lg:text-left text-6xl font-bold;
 }
 
 h2 {
@@ -43,7 +43,7 @@ textarea {
 }
 
 .ghost {
-    @apply text-9xl text-secondary font-bold opacity-10 absolute top-0 left-0;
+    @apply text-6xl lg:text-9xl text-secondary font-bold opacity-10 absolute top-0 left-0;
 }
 
 p {

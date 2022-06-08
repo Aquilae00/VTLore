@@ -17,6 +17,7 @@ export default function ButtonPrimary({
                 className={`${
                     disabled ? 'bg-secondary cursor-not-allowed' : 'bg-primary'
                 } hover:bg-opacity-90 shadow-lg rounded-full text-white`}
+                disabled={disabled}
                 {...props}
             >
                 <Link href={href} className='w-full h-full '>
@@ -32,6 +33,7 @@ export default function ButtonPrimary({
             className={`flex items-center justify-center space-x-sm ${
                 disabled ? 'bg-secondary cursor-not-allowed' : 'bg-primary'
             } hover:bg-opacity-90 shadow-lg rounded-full px-base py-sm text-white`}
+            disabled={disabled}
             {...props}
         >
             {children}

@@ -41,7 +41,9 @@ export default function Forms({
                     onChange={(e) =>
                         setFormProps((prev) => ({...prev, description: e.target.value}))
                     }
+                    maxLength={512}
                 />
+                <span className='text-sm text-red-500 opacity-60'>{`Character length ${formProps.description.length}/512`}</span>
             </fieldset>
         </form>
     );

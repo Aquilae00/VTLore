@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import type {NextPage} from 'next';
+import type {GetStaticProps, NextPage} from 'next';
 import {NextSeo} from 'next-seo';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -9,6 +9,11 @@ import Examples from '../content/examples';
 import HeroSection from '../content/hero';
 import Playground from '../content/playground';
 
+export const getStaticProps: GetStaticProps = async () => {
+    return {
+        props: {},
+    };
+};
 const Home: NextPage = () => {
     return (
         <>

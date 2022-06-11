@@ -48,7 +48,12 @@ export default function HeroSection(): JSX.Element {
                     </div>
                     <div className='flex lg:w-1/2 w-full lg:self-start bg-secondary bg-opacity-10 rounded-md p-sm min-h-[440px] md:min-h-[340px] lg:min-h-[300px] shadow-lg relative mt-lg'>
                         <div className='absolute right-2xl lg:-left-[130px] -top-[130px]'>
-                            <Image src='/accents/hero-arrow.svg' height={200} width={200} />
+                            <Image
+                                src='/accents/hero-arrow.svg'
+                                height={200}
+                                width={200}
+                                priority
+                            />
                         </div>
                         <p className='opacity-60 md:text-lg lg:text-xl'>
                             <Typewriter
